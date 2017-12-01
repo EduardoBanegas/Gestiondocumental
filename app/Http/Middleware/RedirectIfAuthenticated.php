@@ -24,7 +24,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         $this->store($request);
-        $this->act();
+        //$this->act();
         if (Auth::guard($guard)->check()) {
 
 
